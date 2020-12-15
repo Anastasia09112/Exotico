@@ -1,0 +1,35 @@
+
+.search {
+    margin: 35px 0 70px 0;
+}
+
+.search_form  {
+    display: flex;
+    [type="submit"]  {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 22px;
+        padding: 25px 70px 25px 40px;
+        .fridoka_font();
+        color: @white;
+        background:linear-gradient(#ff8331, #ff6626);
+        cursor: pointer;      
+    }
+    [type="text"] {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        padding: 30px 25px 30px 25px;
+        border-top: solid 3px #ffeb90;
+        border-left: solid 3px #ffeb90;
+        border-bottom: solid 3px #ffeb90;
+        width: 100%;
+        .ptserif_font();
+        font-size: 23px;
+        color: #a07258;
+        &::placeholder {
+            color: #e2d4cd;
+        }
+    }
+}

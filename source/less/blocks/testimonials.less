@@ -1,0 +1,169 @@
+.testimonials_all {
+    display: flex;
+    background-color: @white;
+
+    .testimonials_left {
+        padding: 40px 40px 0;
+        text-align: center;
+        border-right: #f2f2f2 2px solid;
+        .testimonials_blog {
+            margin: 0;
+            margin-bottom: 25px;
+            .fridoka_font();
+            font-size: 63px;
+            color: @orange;
+        }
+        .testimonials_form {
+            [type="text"] {
+                margin-bottom: 35px;
+                font-size: 12px;
+                width: 190px;
+                padding: 8px 18px;
+                color:#ffcaae;
+                border: none;
+                border-radius: 25px;
+                background: linear-gradient(#f26124, #ff8230);
+                &::placeholder {
+                    font-size: 12px;
+                    color:#ffcaae;
+                }
+            }
+            .test_form-title {
+                display: block;
+                margin-bottom: 15px;
+                color: @orange;
+                font-size: 12px;
+            }
+        }
+        .testimonials_item {
+            color: #bdbcbb;
+            font-size: 10px;
+            margin-bottom: 40px;
+            .testimonials_box {
+                margin: 20px 0;
+                .testimonials_calendar {
+                    background: url(/images/calendar-icon.svg) no-repeat;
+                    height: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 20px;
+                    margin-right: 10px;
+                }
+                .testimonials_coment {
+                    background: url(/images/chat-icon.svg)no-repeat;
+                    height: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left:  20px;
+                }
+            }
+            h5 {
+                margin: 0;
+                margin-bottom: 20px;
+                max-width: 190px;
+                .ptserif_font();
+                font-size: 16px;
+                color: #000000;
+            }
+        }
+    }
+    .testimonials_right {
+        width: calc(100% - 272px);
+        .testimonials_title {
+            .ptserif_font();
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .testimonials_inner {
+            padding: 40px 40px;
+            .testimonials_title {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .testimonials_adres {
+                margin: 0;
+                margin-bottom: 20px;
+                font-size: 12px;
+                color: #c5c3c2;
+                background: url(/images/point-icon.svg) no-repeat;
+                height: 12px;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 20px;
+            }
+            .testimonials_cite {
+                margin: 0;
+                .ptserif_font();
+                font-size: 22px;
+                font-style: italic;
+                color: #7b7a79;
+            }
+        }
+        .testimonials_img-box {
+            display: flex;
+        }
+        .testimonials_text {
+            margin: 0;
+            padding: 40px 40px;
+            font-size: 13px;
+            line-height: 24px;
+            color: #7b7a79;
+        }
+    }
+    .testimonials_slider {
+        display: flex;
+        justify-content: space-between;
+        .person-list_prev, .person-list_next {
+            padding: 0 20px;
+            path {
+                fill: @orange;
+            }
+            background: #fff3ef;
+            border: none;
+            cursor: pointer;
+            transition: all 0.13s ease-in-out;
+            &:hover {
+                background:#5bb628;
+                path {
+                    fill: @white;
+                }
+            }
+        } 
+        .testimonials_person-list {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-grow: 1;
+            border-top: #fff3ef solid 4px;
+            .person-list_item {
+                width: 33.33333%;
+                cursor: pointer;
+                &:hover {
+                    .person-list_photo {
+                        transition: all 0.13s ease-in-out;
+                        border: #ffefdc 11px solid
+                    }
+
+                }
+                .person-list_photo {
+                    margin-top: 50px;
+                    border-radius: 100%;
+                    border: @white 11px solid;
+
+                }
+                .person-list_name {
+                    margin:0;
+                    margin-top: 17px;
+                    .ptserif_font();
+                    font-size: 16px;
+                }
+                .person-list_location {
+                    margin: 10px 0 30px;
+                    font-size: 11px;
+                    color: #d4b8a9;
+                }
+            }
+        }
+    }
+
+}

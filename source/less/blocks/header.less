@@ -1,0 +1,202 @@
+.header-top {
+    // z-index: 4;
+    width: 100%;
+    height: 48px;
+    background: @orange;
+    background:linear-gradient(#ff8331, #ff6626);
+}
+
+.inner-header-top {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    .header-top_logo{
+        align-self: flex-end;
+        img {
+            display: block;
+        }
+    }
+    .header-top_nav {
+        .quicksand_font ();
+        flex-grow: 1;
+        .header-topheader_list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            .header-top_item {
+                border-top: solid transparent 2px;
+                position: relative;
+                .header-top_link {
+                    color:@white;
+                    font-size: 12px;
+                    text-decoration: none;
+                    margin: 0 18px;
+                    line-height: 48px;
+                    display: block;
+                    border-top: solid transparent 2px;
+                    transition: all 0.2s ease-out;
+                    &:hover {
+                        color: @yellow;
+                        border-top: @yellow solid 2px;
+                    }
+                }
+                &:hover {
+                    .header-top_sub-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .header-top_card {
+        display: flex;
+        align-items: center;
+        .header-top_backet {
+            padding: 0 7px;
+            .ptserif_font();
+            font-size: 14px;
+            font-style: italic;
+            color: @yellow;
+        }
+        .header-top_nuber-item {
+            color: @white;
+            .quicksand_font ();
+            font-size: 14px;
+            .header-top_line {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+.header-top_sub-menu {
+    z-index: 15;
+    display: none;
+    &::before{
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 4.5px 5px 4.5px;
+        border-color: transparent transparent #ffffff transparent;
+        position: absolute;
+        top: -5px;
+    }
+    position: absolute;
+    top: 96%;
+    left: 18px;
+    padding: 20px 25px 0 25px;
+    list-style: none;
+    background-color: @white;
+    .sub-menu_item {
+        margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #7b7a79;
+            &:hover {
+                color: @orange;
+            }
+         }
+    }
+}
+
+.header_slider {
+    position: relative;
+     .slick-dots {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+    }
+
+    button {
+        width: 10px;
+        height: 10px;
+        display: block;
+        padding: 0;
+        margin: 25px 0;
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 0;
+        font-size: 0;
+        padding: 0;
+
+        // &:active  {
+        //     outline: none;
+        // }
+    }
+
+    .slick-dots {
+        list-style: none;
+        .slick-active{
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .header_slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.header_inner {
+    height: calc(100vh - 48px);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_title {
+    .fridoka_font();
+    color: @white;
+    text-align: center;
+    font-size: 68px;
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 0 100px 0;
+}
+
+.header_inner-desc {
+    display: flex;
+    align-items: center;
+    .header_desc {
+        margin-left: 15%;
+        width: 25%;
+        .header_title-desc {
+            .fridoka_font();
+            margin: 0;
+
+            font-size: 30px;
+            color: @yellow;
+        }
+        .header_text {
+            font-size: 16px;
+            color: @white;
+        }
+        .header_cite {
+            .ptserif_font();
+            font-size: 23px;
+            color: @white;
+        }
+    }
+    .header_img {
+        position: relative;
+        .header_price {
+            position: absolute;
+            top: 40%;
+            left: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 142px;
+            height: 142px;
+            border-radius: 142px;
+            background-color: #4ba321;
+            .fridoka_font();
+            font-size: 58px;
+            color: @yellow;
+        }
+    }
+}

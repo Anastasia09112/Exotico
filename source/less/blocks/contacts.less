@@ -1,0 +1,86 @@
+
+.contacts_inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    .contacts_one-box {
+        width: 33.33333%;
+        display: flex;
+        // justify-content: space-between;
+        .contacts_users {
+            width: 50%;
+        }
+    }
+}
+
+.contacts_contacts, .contacts_twits {
+    width: 33.33333%;
+}
+.contacts_title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size:  16px;
+    color: @orange;
+    .fridoka_font();
+}
+
+.tw {
+    padding-left: 35px;
+    background: url(/images/twit.png) no-repeat;
+    height: 18px;
+    display: inline-block;
+    color: #5ad2ff;
+}
+
+.contacts_list {
+    margin: 0;
+    list-style: none;
+    .contacts_item {
+        a, p {
+            margin: 0;
+            text-decoration: none;
+            color: #7b7a79;
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    .tel {
+        margin-bottom: 15px;
+
+        a {
+            font-size: 30px;
+        }
+    }
+    .mail {
+        margin-bottom: 15px;
+    }
+    .arrow {
+        padding-left: 20px;
+        margin-bottom: 15px;
+        background: url(/images/twit-arrow.png) no-repeat;
+        height: 14px;
+        display: inline-block;
+    }
+
+
+    .adres {
+        p {
+            font-weight: bold;
+            background: url(/images/point-icon.svg) no-repeat;
+            height: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 20px;
+        }
+    }
+    .hour {
+        padding-left: 20px;
+        margin-top: 15px;
+        span {
+            .fridoka_font();
+            color: #5ad2ff;
+        }
+    }
+
+}
+

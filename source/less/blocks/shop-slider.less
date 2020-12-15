@@ -1,0 +1,109 @@
+.shop-slider_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#ff8331, #ff6626);
+    .shop-slider_left, .shop-slider_right {
+        margin: 0;
+        padding: 20px 20px;
+        border: none;
+        background: #eb4516;
+        &:hover {
+            background: linear-gradient(#ff6626, #ff8331);
+        }
+        &:active {
+           background: #eb4516;
+        }
+        cursor: pointer;
+    }
+
+    .shop-slider_right {
+        margin-left: -4px;
+        border-left: #b1300d solid 1px;
+    }
+
+    .shop-slider_title {
+        margin: 0;
+        padding: 0;
+        .fridoka_font();
+        color: @white;
+        font-size: 43px;
+    }
+
+    .shop-slider_category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+        .ptserif_font();
+        color: @yellow;
+        font-size: 14px;
+        span {
+            margin: 0 5px;
+            text-decoration: underline;
+            color: @white;
+        }
+        .shop-slider_down {
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: rgba(0 , 0, 0, 0);
+        }
+    }
+}
+
+.shop-slider_karusel {
+    display: flex;
+
+    background: @white;
+    .shop-slider_item {
+        width: 25%;
+        max-height: 308px;
+        overflow: hidden;
+        border-right: #e6e6e6 solid 1px;
+
+        &:hover {
+            .shop-slider_image {
+                margin-top: -70px;
+                transition: all 0.37s ease-in-out;
+            }
+
+        }
+        .shop-slider_image {
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.37s ease-in-out;
+
+        }
+        .shop-slider_title {
+            margin-bottom:25px;
+            text-align: center;
+            font-size: 12px;
+            color: #68686868;
+        }
+        .shop-slider_price {
+            display: block;
+            margin-bottom: 25px;
+            .fridoka_font();
+            text-align: center;
+            font-size: 26px;
+        }
+        .shop-slider_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background: linear-gradient(#f74f31, #f33420);
+            span {
+                margin-left: 10px;
+                .fridoka_font();
+                font-size: 28px;
+                line-height: 70px;
+                color: @white;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.about {
+    text-align: center;
+    color: #a07258;
+    .about_inner {
+        display: inline-block;
+        max-width: 775px;
+    }
+
+    .about_teitle {
+        display: inline-block;
+        position: relative;
+        margin: 70px 0 30px;
+        padding: 0;
+        .fridoka_font();
+        font-size: 54px;
+        &::after {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            content: "";
+            width: 225px;
+            height: 1px;
+            background-color: rgba(160, 114, 88, 0.3);
+        }
+    }
+    .about_sub-title {
+        margin: 30px 0 30px;
+        padding: 0;
+        .ptserif_font();
+        font-size: 23px;
+    }
+    .about_text {
+        margin: 30px 0 35px;
+        padding: 0;
+        .relaway_font();
+        font-size: 12px;
+    }
+}
